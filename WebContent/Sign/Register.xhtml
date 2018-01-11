@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="../Template/ComplexTemplateHeaderDetail.xhtml">
+	<ui:define name="content">
+		<h:form id="registerForm">
+			<h:panelGrid border="0" columns="2">
+				<h:outputLabel value="Email"></h:outputLabel>
+				<h:panelGroup>
+					<h:inputText id="email" value="#{registerController.email}">
+					</h:inputText>
+				</h:panelGroup>
+				<h:outputLabel value="Password"></h:outputLabel>
+				<h:panelGroup>		
+					<h:inputSecret id="password" value="#{registerController.password}">
+					</h:inputSecret>				
+				</h:panelGroup>
+				<h:outputLabel value="Confirmation"></h:outputLabel>
+				<h:inputSecret value="#{registerController.confirmation}">
+				</h:inputSecret>
+			</h:panelGrid>
+
+			<h:messages style="color:black" /><br/>
+
+			<h:commandButton value="Save"
+				action="#{registerController.onCreateUser}"></h:commandButton>
+			<h:commandButton value="Cancel" action="BACK" immediate="true"></h:commandButton>
+		</h:form>
+	</ui:define>
+</ui:composition>
+
+</html>

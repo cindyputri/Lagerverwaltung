@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+	<title>Lagerverwaltung</title>
+	<link href="../Style/all.css" rel="stylesheet" type="text/css" />
+	<style  type="text/css">
+		html, body{
+		  height:100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+	    <ui:include src="Header.xhtml"/>
+	</div>
+	
+	<div id="content-container" style="float:left; height: calc(100% - (100px)); width:100%;">
+		<div id="nav-left">
+			<ui:include src="Nav.xhtml"/>
+		</div>
+		
+	    <div id="content">
+			 <ui:insert name="content"/>
+	    </div>
+	</div>
+	
+	<div id="footer">
+		<ui:include src="Footer.xhtml"/>
+	</div>
+</body>
+</html>
+
+<!-- Color Palette:
+	#ecd9c6 - light cream
+ -->

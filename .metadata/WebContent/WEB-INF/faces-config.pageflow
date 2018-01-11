@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15134141394860" configfile="/Lagerverwaltung/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="370" id="pf15156284732110" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf15156284732111 pf15156284732112 pf15156284732113" inlinks="pf15156284732114 pf15156284732115" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Register.xhtml" x="122" y="178" id="pf15156284732126" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf15156284732114" inlinks="pf15156284732111" path="/Sign/Register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Welcome.xhtml" x="554" y="370" id="pf15156284732127" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15156284732112" path="/Sign/Welcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Error.xhtml" x="122" y="562" id="pf15156284732128" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf15156284732115" inlinks="pf15156284732113" path="/Sign/Error.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="BuchSuchen.xhtml" x="338" y="946" id="pf15156284732129" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" outlinks="pf151562847321210 pf151562847321211" inlinks="pf151562847321212" path="/Buch/BuchSuchen.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="BuchSuchenNoResult.xhtml" x="122" y="946" id="pf151562847321213" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf151562847321212" inlinks="pf151562847321210" path="/Buch/BuchSuchenNoResult.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Buch/BuchSuchenResultList.xhtml" x="554" y="946" id="pf151562847321214" referenceLink="//@navigationRule.6/@navigationCase.1/@toViewId|" inlinks="pf151562847321211" path="/Buch/BuchSuchenResultList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CONTENTPAGE" x="118" y="1452" id="pf151562970854315" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf151562970854316 pf151562970854317 pf151562970854318 pf151562970854319 pf151562970854320 pf15156919307351 pf15156919307352" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="Books.xhtml" x="127" y="1236" id="pf151562970854321" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf151562970854316" path="/Books.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Regale.xhtml" x="347" y="1236" id="pf151562970854322" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf151562970854317" path="/Regale.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Bestellungen.xhtml" x="334" y="1452" id="pf151562970854323" referenceLink="//@navigationRule.3/@navigationCase.2/@toViewId|" inlinks="pf151562970854318" path="/Bestellungen.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Benutzerkonto.xhtml" x="305" y="1668" id="pf151562970854324" referenceLink="//@navigationRule.3/@navigationCase.3/@toViewId|" inlinks="pf151562970854319" path="/Benutzerkonto.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="SignOut.xhtml" x="122" y="1656" id="pf151562970854325" referenceLink="//@navigationRule.3/@navigationCase.6/@toViewId|" inlinks="pf151562970854320" path="/SignOut.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Footer/Impressum.xhtml" id="pf15156919307353" referenceLink="//@navigationRule.3/@navigationCase.5/@toViewId|" inlinks="pf15156919307351" path="/Footer/Impressum.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Footer/Kontakt.xhtml" id="pf15156919307354" referenceLink="//@navigationRule.3/@navigationCase.6/@toViewId|" inlinks="pf15156919307352" path="/Footer/Kontakt.xhtml"/>
+  <links id="pf15156284732111" target="pf15156284732126" source="pf15156284732110" outcome="REGISTER"/>
+  <links id="pf15156284732112" target="pf15156284732127" source="pf15156284732110" outcome="OK"/>
+  <links id="pf15156284732113" target="pf15156284732128" source="pf15156284732110" outcome="ERROR"/>
+  <links id="pf15156284732114" target="pf15156284732110" source="pf15156284732126" outcome="BACK"/>
+  <links id="pf15156284732115" target="pf15156284732110" source="pf15156284732128" outcome="LOGIN"/>
+  <links id="pf151562847321210" target="pf151562847321213" source="pf15156284732129" outcome="NORESULT"/>
+  <links id="pf151562847321211" target="pf151562847321214" source="pf15156284732129" outcome="RESULTLIST"/>
+  <links id="pf151562847321212" target="pf15156284732129" source="pf151562847321213" outcome="BUCHSUCHEN"/>
+  <links id="pf151562970854316" target="pf151562970854321" source="pf151562970854315" outcome="Buch"/>
+  <links id="pf151562970854317" target="pf151562970854322" source="pf151562970854315" outcome="Regal"/>
+  <links id="pf151562970854318" target="pf151562970854323" source="pf151562970854315" outcome="Bestellungen"/>
+  <links id="pf151562970854319" target="pf151562970854324" source="pf151562970854315" outcome="Benutzerkonto"/>
+  <links id="pf151562970854320" target="pf151562970854325" source="pf151562970854315" outcome="SignOut"/>
+  <links id="pf15156919307351" target="pf15156919307353" source="pf151562970854315" outcome="Impressum"/>
+  <links id="pf15156919307352" target="pf15156919307354" source="pf151562970854315" outcome="Kontakt"/>
+</pageflow:Pageflow>

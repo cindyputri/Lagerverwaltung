@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+    
+    <navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>REGISTER</from-outcome>
+			<to-view-id>/Sign/Register.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>OK</from-outcome>
+			<to-view-id>/Sign/Welcome.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>ERROR</from-outcome>
+			<to-view-id>/Sign/Error.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>CONTENTPAGE</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>Buch</from-outcome>
+			<to-view-id>/Books.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Regal</from-outcome>
+			<to-view-id>/Regale.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Bestellungen</from-outcome>
+			<to-view-id>/Bestellungen.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Benutzerkonto</from-outcome>
+			<to-view-id>/Benutzerkonto.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>SignOut</from-outcome>
+			<to-view-id>/SignOut.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Impressum</from-outcome>
+			<to-view-id>/Footer/Impressum.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Kontakt</from-outcome>
+			<to-view-id>/Footer/Kontakt.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>Register.xhtml</display-name>
+		<from-view-id>/Sign/Register.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>BACK</from-outcome>
+			<to-view-id>/index.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>Error.xhtml</display-name>
+		<from-view-id>/Sign/Error.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>LOGIN</from-outcome>
+			<to-view-id>/index.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>BuchSuchen.xhtml</display-name>
+		<from-view-id>/Buch/BuchSuchen.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>NORESULT</from-outcome>
+			<to-view-id>/Buch/BuchSuchenNoResult.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RESULTLIST</from-outcome>
+			<to-view-id>/Buch/BuchSuchenResultList.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>BuchSuchenNoResult.xhtml</display-name>
+		<from-view-id>/Buch/BuchSuchenNoResult.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>BUCHSUCHEN</from-outcome>
+			<to-view-id>/Buch/BuchSuchen.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

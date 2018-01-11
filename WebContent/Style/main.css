@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+/* 
+	@since: 20.12.2017
+	Color-Palette:
+		#ffe6cc - cream
+		#804200 - Milk Chocolate
+		#663500 - dark brown
+		#4d2800 - dark wood
+		#990000 - red cherry
+*/
+
+body{ 
+	background: #ffe6cc;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #663500; /*font color*/
+	text-align: center;	
+}
+
+#header{
+	float:left; 
+	height: 130px; 
+	width:100%;
+}
+
+#nav-left{
+	float:left; 
+	height: 100%; 
+	width: 30px;
+}
+
+#content-container, #content{
+	/*float:left;*/ 
+	width:100%; 
+	background-color: #ecd9c6; 
+	height: 100%;
+}

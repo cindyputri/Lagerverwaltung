@@ -1,0 +1,42 @@
+-- TABLE REGAL
+INSERT INTO `eeadb`.`tbl_std_regal` (`REG_ID`) VALUES ('1');
+INSERT INTO `eeadb`.`tbl_std_regal` (`REG_ID`) VALUES ('2');
+INSERT INTO `eeadb`.`tbl_std_regal` (`REG_ID`) VALUES ('3');
+INSERT INTO `eeadb`.`tbl_std_regal` (`REG_ID`) VALUES ('5');
+
+-- TABLE BUCHTYP
+INSERT INTO `eeadb`.`tbl_std_buchtyp` (`BT_ID`, `BT_ISBN`, `BT_TITEL`) 
+VALUES ('1', '9780439708180', 'Harry Potter and the Sorcerer\'s Stone');
+INSERT INTO `eeadb`.`tbl_std_buchtyp` (`BT_ID`, `BT_ISBN`, `BT_TITEL`) 
+VALUES ('2', '9781408855669', 'Harry Potter and the Chamber of Secrets');
+INSERT INTO `eeadb`.`tbl_std_buchtyp` (`BT_ID`, `BT_ISBN`, `BT_TITEL`) 
+VALUES ('3', '9783527707300', 'Java 7 für Dummies');
+INSERT INTO `eeadb`.`tbl_std_buchtyp` (`BT_ID`, `BT_ISBN`, `BT_TITEL`) 
+VALUES ('4', '9783831030255', 'Das Disney Buch: Die magische Welt von Disney');
+
+-- TABLE BUCHEXEMPLAR
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('1', '1', '1');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('2', '1', '1');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('3', '1', '2');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('4', '1', '2');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('5', '2', '1');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('6', '2', '2');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('7', '2', '3');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('8', '3', '4');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('9', '3', '4');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('10', '4', '3');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('11', '4', '3');
+INSERT INTO `eeadb`.`tbl_std_buchexemplar` (`BE_ID`, `BE_BUCHTYP_ID`, `BE_REGAL_ID`) VALUES ('12', '4', '3');
+
+-- TABLE BENUTZERKONTO
+INSERT INTO `eeadb`.`tbl_std_benutzerkonto` (`BK_ID`, `BK_EMAIL`, `BK_LAGERRECHTE`, `BK_PASSWORD`) 
+VALUES ('1', 'bubble', '0', 'bubble');
+INSERT INTO `eeadb`.`tbl_std_benutzerkonto` (`BK_ID`, `BK_EMAIL`, `BK_LAGERRECHTE`, `BK_PASSWORD`) 
+VALUES ('2', 'lager', '1', 'lager');
+
+-- TABLE BESTELLUNG
+INSERT INTO `eeadb`.`tbl_std_bestellung` (`BEST_ID`, `BEST_AUFTRAGSNUMMER`, `BEST_STATUS`, `BEST_VERSANDADRESSE`, `BEST_VERSANDNAME`) 
+VALUES ('1', '1', '0', 'Ingolstadt', 'Mayer');
+INSERT INTO `eeadb`.`tbl_std_bestellung` (`BEST_ID`, `BEST_AUFTRAGSNUMMER`, `BEST_STATUS`, `BEST_VERSANDADRESSE`, `BEST_VERSANDNAME`) 
+VALUES ('2', '2', '0', 'Coburg', 'Schmidt');
+

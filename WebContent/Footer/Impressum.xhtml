@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+<ui:composition template="Template/ComplexTemplateHeaderDetail.xhtml">
+	<ui:define name="content">
+		<h:panelGrid border="1" columns="2">
+			<h:outputText value="ISBN"></h:outputText>
+			<h:outputText value="Anzahl Exemplare"></h:outputText>
+			<h:outputText value="123456">
+				<h:form>
+					<h:commandLink>
+						<h:outputText value="CommandLink"></h:outputText>
+					</h:commandLink>
+				</h:form>
+			</h:outputText>
+			<h:outputText value="3"></h:outputText>
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>
+
+</html>

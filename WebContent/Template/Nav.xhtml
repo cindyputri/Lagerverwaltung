@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				xmlns:f="http://java.sun.com/jsf/core">
+	   
+     <h:form style="width: 100%; background-color: #d9b38c;" border="0">
+         <h:commandLink action="Buch" value="Buch">ddddd
+         </h:commandLink>
+         
+         <h:commandLink rendered="#{navController.isAdmin()}" action="Regal" value="Regal">
+         </h:commandLink>
+         
+         <h:commandLink rendered="#{navController.isAdmin()}" action="Bestellung" value="Bestellung">
+         </h:commandLink>
+         
+         <h:commandLink rendered="#{navController.isAdmin()}" action="Benutzerkonto" value="Benutzerkonto">
+         </h:commandLink>
+         
+         <h:commandLink rendered="#{navController.isAdmin()}" action = "Sign Out" value = "Sign Out">
+         </h:commandLink>
+     </h:form>
+
+</ui:composition>
